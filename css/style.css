@@ -1,0 +1,11 @@
+body {
+    background: url('../Capture.PNG') no-repeat;
+    background-size: 150%;
+}
+.table {
+    margin-top: 30px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}

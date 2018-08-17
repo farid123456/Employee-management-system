@@ -1,0 +1,67 @@
+<tb-header></tb-header>
+
+<div class="col-xs-12">
+    <form name="form">
+        <div class="form-group">
+            <div class="col-sm-4 input-group">
+                <label class="col-sm-2">Name</label>
+                <input class="form-control" type="text" name="username" id="username" placeholder="Enter employee name" ng-model="employee.username" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-4 input-group">
+                <label class="col-sm-2">Email</label>
+                <input class="form-control" type="email" name="email" id="email" placeholder="Enter employee email" ng-model="employee.email" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-4 input-group">
+                <label class="col-sm-2">Phone</label>
+                <input class="form-control" type="text" name="phone" id="phone" placeholder="Enter employee phone" ng-model="employee.phone" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-xs-2 col-md-2">
+                <input type="submit" value="Save" class="btn btn-success" ng-click="form.$valid && save($event)">
+            </div>
+        </div>
+
+        <div class="form-group" style="margin-top: 30px" >
+            <input class="form-control" type="text" ng-model="searchText.username"  placeholder="Search employee by name">
+        </div>
+    </form>
+</div>
+
+
+
+<div class="col-xs-12 table"  >
+    <table id="table1" class="table table-striped table-bordered table-condensed" >
+        <tbody id="tableBody">
+            <tr class="header">
+                <th><span class="caret"></span> Name</th>
+                <th><span class="caret"></span> EMail</th>
+                <th><span class="caret"></span> Phone</th>
+                <th><span class="caret"></span> Action</th>
+            </tr>
+            <tr ng-repeat="item in list | filter: searchText">
+                <td>
+                    <span>{{item.username}}</span>
+                </td>
+                <td>
+                    <span>{{item.email}}</span>
+                </td>
+                <td>
+                    <span>{{item.phone}}</span>
+                </td>
+                <td>
+                    <a href="#/todo/edit/{{item.id}}" class="btn btn-sm btn-default">
+                        <span >Edit</span>
+                    </a>
+                    <button type="button" class="btn btn-sm btn-danger" ng-click="removeItem(item)">
+                        <span>Delete</span>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
