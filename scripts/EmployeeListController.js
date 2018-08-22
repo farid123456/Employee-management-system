@@ -1,6 +1,6 @@
 angular.module('EmployeeManagementSystem')
 
-    .controller("EmployeeListController", '$scope', '$location', '$routeParams', 'EmployeeList', function($scope, $location, $routeParams, EmployeeList) {
+    .controller("EmployeeListController", ['$scope', '$location', '$routeParams', 'EmployeeList', function($scope, $location, $routeParams, EmployeeList) {
         $scope.list = EmployeeList.get();
         $scope.employee = angular.copy(EmployeeList.findById(parseInt($routeParams.id)));   // Update the item
 
@@ -17,4 +17,4 @@ angular.module('EmployeeManagementSystem')
         $scope.removeItem = function(entry) {
             EmployeeList.removeItem(entry);
         };
-    });
+    }]);
