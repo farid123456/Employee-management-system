@@ -1,6 +1,10 @@
 angular.module('EmployeeManagementSystem')
 
-    .controller("EmployeeListController", ['$scope', '$location', '$routeParams', 'EmployeeList', function($scope, $location, $routeParams, EmployeeList) {
+    .controller("EmployeeListController", ['$scope', '$translate', '$location', '$routeParams', 'EmployeeList', function($scope, $translate, $location,  $routeParams, EmployeeList) {
+        $scope.changeLanguage = function (key) {
+            console.log(key);
+            $translate.use(key);
+        };
         $scope.list = EmployeeList.get();
         $scope.employee = angular.copy(EmployeeList.findById(parseInt($routeParams.id)));   // Update the item
 

@@ -4,19 +4,19 @@
     <form name="form">
         <div class="form-group">
             <div class="col-sm-4 input-group">
-                <label class="col-sm-2">Name</label>
+                <label class="col-sm-2" translate="name"></label>
                 <input class="form-control" type="text" name="username" id="username" placeholder="Enter employee name" ng-model="employee.username" required>
             </div>
         </div>
         <div class="form-group">
             <div class="col-sm-4 input-group">
-                <label class="col-sm-2">Email</label>
+                <label class="col-sm-2" translate="email"></label>
                 <input class="form-control" type="email" name="email" id="email" placeholder="Enter employee email" ng-model="employee.email" required>
             </div>
         </div>
         <div class="form-group">
             <div class="col-sm-4 input-group">
-                <label class="col-sm-2">Phone</label>
+                <label class="col-sm-2" translate="phone"></label>
                 <input class="form-control" type="text" name="phone" id="phone" placeholder="Enter employee phone" ng-model="employee.phone" required>
             </div>
         </div>
@@ -38,10 +38,10 @@
     <table id="table1" class="table table-striped table-bordered table-condensed" >
         <tbody id="tableBody">
             <tr class="header">
-                <th><span class="caret"></span> Name</th>
-                <th><span class="caret"></span> EMail</th>
-                <th><span class="caret"></span> Phone</th>
-                <th><span class="caret"></span> Action</th>
+                <th translate="name"><span class="caret"></span> </th>
+                <th translate="email"><span class="caret"></span> </th>
+                <th translate="phone"><span class="caret"></span> </th>
+                <th translate="action"><span class="caret"></span> </th>
             </tr>
             <tr ng-repeat="item in list | filter: searchText">
                 <td>
@@ -55,10 +55,10 @@
                 </td>
                 <td>
                     <a href="#/todo/edit/{{item.id}}" class="btn btn-sm btn-default">
-                        <span >Edit</span>
+                        <span translate="edit"></span>
                     </a>
                     <button type="button" class="btn btn-sm btn-danger" ng-click="removeItem(item)">
-                        <span>Delete</span>
+                        <span translate="delete"></span>
                     </button>
                 </td>
             </tr>
