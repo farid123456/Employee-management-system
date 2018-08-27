@@ -2,7 +2,6 @@ angular.module('EmployeeManagementSystem')
 
     .controller("EmployeeListController", ['$scope', '$translate', '$location', '$routeParams', 'EmployeeList', function($scope, $translate, $location,  $routeParams, EmployeeList) {
         $scope.changeLanguage = function (key) {
-            console.log(key);
             $translate.use(key);
         };
         $scope.list = EmployeeList.get();
