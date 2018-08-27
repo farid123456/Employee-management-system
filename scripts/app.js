@@ -19,7 +19,8 @@ angular.module('EmployeeManagementSystem', ['ngRoute','pascalprecht.translate'])
             edit: 'Edit',
             delete: 'Delete',
             BUTTON_LANG_EN: 'English',
-            BUTTON_LANG_FR: 'French'});
+            BUTTON_LANG_FR: 'French'
+        });
 
         $translateProvider.translations('fr', {
             TITLE: 'Employé La gestion Système ',
@@ -38,7 +39,8 @@ angular.module('EmployeeManagementSystem', ['ngRoute','pascalprecht.translate'])
             edit: 'Modifier',
             delete: 'Effacer',
             BUTTON_LANG_EN: 'Anglais',
-            BUTTON_LANG_FR: 'Français'});
+            BUTTON_LANG_FR: 'Français'
+        });
 
         $translateProvider.preferredLanguage('en');
 
@@ -57,7 +59,5 @@ angular.module('EmployeeManagementSystem', ['ngRoute','pascalprecht.translate'])
             })
             .otherwise({ redirectTo: '/todo' });
         $locationProvider.hashPrefix('');   // Deep Linking
-
-
 
     }]);
