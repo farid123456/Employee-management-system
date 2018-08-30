@@ -1,21 +1,19 @@
-[
-    {
-        "TITLE": "Employé La gestion Système ",
-        "HEADER": "EM Système",
-        "c1": "Cliquez sur le lien ci-dessous pour afficher le dossier des employés dans l\"organisation.",
-        "c2": "Quelques caractéristiques importantes de cette Application:",
-        "l1": "Ajouter Employé",
-        "l2": "Mettre à jour Employé",
-        "l3": "Effacer Employé",
-        "l4": "Chercher Employé",
-        "BUTTON_CLICK": "Cliquez ici",
-        "name": "Prénom",
-        "email": "Email",
-        "phone": "Téléphone",
-        "action": "Action",
-        "edit": "Modifier",
-        "delete": "Effacer",
-        "BUTTON_LANG_EN": "Anglais",
-        "BUTTON_LANG_FR": "Français"
-    }
-]
+{
+    "TITLE": "Employé La gestion Système ",
+    "HEADER": "EM Système",
+    "c1": "Cliquez sur le lien ci-dessous pour afficher le dossier des employés dans l\"organisation.",
+    "c2": "Quelques caractéristiques importantes de cette Application:",
+    "l1": "Ajouter Employé",
+    "l2": "Mettre à jour Employé",
+    "l3": "Effacer Employé",
+    "l4": "Chercher Employé",
+    "BUTTON_CLICK": "Cliquez ici",
+    "name": "Prénom",
+    "email": "Email",
+    "phone": "Téléphone",
+    "action": "Action",
+    "edit": "Modifier",
+    "delete": "Effacer",
+    "BUTTON_LANG_EN": "Anglais",
+    "BUTTON_LANG_FR": "Français"
+}

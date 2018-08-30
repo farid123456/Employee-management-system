@@ -1,21 +1,19 @@
-[
-    {
-        "TITLE": "Employee Management System",
-        "HEADER": "EM System",
-        "c1": "Click the Below link to view the employee record in the Organization.",
-        "c2": "Some Important Features of this Application:",
-        "l1": "Add Employee",
-        "l2": "Update Employee",
-        "l3": "Delete Employee",
-        "l4": "Search Employee",
-        "BUTTON_CLICK": "Click Here",
-        "name": "Name",
-        "email": "Email",
-        "phone": "Phone",
-        "action": "Action",
-        "edit": "Edit",
-        "delete": "Delete",
-        "BUTTON_LANG_EN": "English",
-        "BUTTON_LANG_FR": "French"
-    }
-]
+{
+    "TITLE": "Employee Management System",
+    "HEADER": "EM System",
+    "c1": "Click the Below link to view the employee record in the Organization.",
+    "c2": "Some Important Features of this Application:",
+    "l1": "Add Employee",
+    "l2": "Update Employee",
+    "l3": "Delete Employee",
+    "l4": "Search Employee",
+    "BUTTON_CLICK": "Click Here",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "action": "Action",
+    "edit": "Edit",
+    "delete": "Delete",
+    "BUTTON_LANG_EN": "English",
+    "BUTTON_LANG_FR": "French"
+}
