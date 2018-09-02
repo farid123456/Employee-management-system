@@ -1,0 +1,27 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "Gulp Work",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/farid123456/Employee-management-system.git"
+  },
+  "author": "Farid Afzal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/farid123456/Employee-management-system/issues"
+  },
+  "homepage": "https://github.com/farid123456/Employee-management-system#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.7",
+    "gulp": "^3.9.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.1",
+    "gulp-useref": "^3.1.5"
+  }
+}

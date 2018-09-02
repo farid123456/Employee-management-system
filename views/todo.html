@@ -1,5 +1,4 @@
 <tb-header></tb-header>
-
 <div class="col-xs-12">
     <form name="form">
         <div class="form-group">
@@ -25,15 +24,11 @@
                 <input type="submit" value="{{'saveButton' | translate}}" class="btn btn-success" ng-click="form.$valid && save($event)">
             </div>
         </div>
-
         <div class="form-group" style="margin-top: 30px" >
             <input class="form-control" type="text" ng-model="searchText.username"  placeholder="{{'searchPlaceholder' | translate}}">
         </div>
     </form>
 </div>
-
-
-
 <div class="col-xs-12 table"  >
     <table id="table1" class="table table-striped table-bordered table-condensed" >
         <tbody id="tableBody">
